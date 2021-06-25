@@ -15,7 +15,7 @@
   function linux(){
     var xhr = new XMLHttpRequest();
     cmd = document.getElementById("cmd").value;
-    xhr.open("GET",`http://192.168.0.113/cgi-bin/task7.py?q=${cmd}`,false);
+    xhr.open("GET",`http://192.168.0.0/cgi-bin/file.py?q=${cmd}`,false);
     xhr.send();
     var output = xhr.responseText;
     document.getElementById("out").innerHTML = output;
